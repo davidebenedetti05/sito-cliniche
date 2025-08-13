@@ -28,7 +28,7 @@ Nome Clinica: ${formData.clinicName}
 Città: ${formData.city}
 Messaggio: ${formData.message}`;
 
-    const mailtoLink = `mailto:davide.benedetti05@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:db@davidebenedetti.it?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
     window.open(mailtoLink);
