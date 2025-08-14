@@ -5,7 +5,7 @@ const ProcessSection = () => {
     {
       number: "1",
       title: "Prenota la call e ricevi la checklist",
-      description: "Compila il modulo e fissiamo la prima chiamata gratuita. Dopo la prenotazione ti invierò la Checklist Anti-Pazienti Fuori Target: in una sola pagina trovi 7 azioni semplici per eliminare le prime visite “a vuoto” e arrivare alla call con le idee chiare.",
+      description: "Compila il modulo e fissiamo la prima chiamata gratuita. Dopo la prenotazione ti invierò la Checklist Anti-Pazienti Fuori Target.",
     },
     {
       number: "2",

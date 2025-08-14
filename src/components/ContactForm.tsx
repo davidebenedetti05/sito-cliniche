@@ -161,7 +161,7 @@ Messaggio: ${formData.message}`;
                   </h2>
                   <p className="text-sm sm:text-base lg:text-xl text-muted-foreground leading-relaxed">
                     Compila il modulo qui sotto, ti rispondo entro 24 ore e se la tua città è ancora libera,
-                    fissiamo la prima call gratuita.
+                    fissiamo la prima call gratuita. Dopo la prenotazione riceverai subito la Checklist gratuitamente.
                   </p>
                 </div>
 
