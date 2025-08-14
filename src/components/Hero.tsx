@@ -52,7 +52,12 @@ const Hero = () => {
               >
                 Ricevi richieste da pazienti veramente interessati
               </Button>
-
+              {/* Riga bonus */}
+      <p className="text-sm text-muted-foreground max-w-xl">
+        <span className="font-medium">Bonus riservato:</span> dopo la prenotazione ricevi la
+        <span className="font-medium"> Checklist Anti-Pazienti Fuori Target</span> —
+        7 azioni semplici per ridurre le prime visite “a vuoto” e arrivare alla call con le idee chiare.
+      </p>
               {/* Immagine mobile */}
               <div className="block lg:hidden mt-10 mb-10">
                 <img
