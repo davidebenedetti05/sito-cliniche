@@ -1,88 +1,103 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Globe, Mail, Video, MessageCircle } from "lucide-react";
+import { Globe, Mail, MessageCircle } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
-      title: "Pagina del sito",
+      title: "Copywriting",
       description:
-        "Il copy parlerà davvero al tuo paziente ideale: capirà subito se è nel posto giusto.",
+        "Testi mirati per ads (o organico) e sito che spingono alla prenotazione.",
       icon: Globe,
     },
     {
-      title: "Email di follow-up",
+      title: "Script pronti per la reception",
       description:
-        "Ti preparo 2–3 email, con lo scopo di non perdere pazienti interessati solo perché non hanno risposto al primo messaggio.",
-      icon: Mail,
-    },
-    {
-      title: "Script per video",
-      description:
-        "Ti mando 2–3 script e descrizioni per video da pubblicare sui social. Se funziona, puoi usarlo anche come annuncio sponsorizzato.",
-      icon: Video,
-    },
-    {
-      title: "Messaggi per la segretaria",
-      description:
-        "Risposte già pronte da copiare e incollare, scritte per funzionare su qualsiasi canale: WhatsApp, email o altro. Ogni nuovo contatto riceve subito una risposta chiara, senza attese o errori.",
+        "Frasi pronte per chiudere preventivi al telefono, via mail o WhatsApp in pochi minuti.",
       icon: MessageCircle,
+    },
+    {
+      title: "Email marketing",
+      description:
+        "Sequenze automatiche per recuperare preventivi, stimolare extra e far tornare gli ospiti.",
+      icon: Mail,
     },
   ];
 
   return (
     <>
-      {/* Il mio approccio (USP) */}
-      <section className="py-10 lg:py-20 bg-muted/10">
-        <div className="w-full px-4 mx-auto">
-          <div className="text-center space-y-6 lg:space-y-12 max-w-[1400px] mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Perché non lavoro come gli altri
-            </h2>
+      {/* USP Section – con più respiro sopra e sotto */}
+      <section className="py-28 bg-neutral-100">
+        <div className="max-w-4xl mx-auto px-4 space-y-10">
+          {/* Titolo */}
+          <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900">
+            Non voglio che il tuo hotel dipenda da me né dagli intermediari
+          </h2>
 
-            <div className="bg-card rounded-lg p-4 sm:p-6 lg:p-10 w-full shadow-elegant border-2 border-primary/10">
-              <div className="space-y-4 sm:space-y-6 lg:space-y-8 text-sm sm:text-base lg:text-lg text-muted-foreground">
-                <p className="leading-relaxed">
-                  Ti consegno testi che attirano persone già informate e convinte del tuo approccio, così la
-                  segretaria non deve più{" "}
-                  <strong className="text-foreground font-semibold">inventare</strong>{" "}
-                  cosa scrivere e tu smetti di ricevere messaggi vaghi alle 21:00.
-                </p>
-                <p className="leading-relaxed">
-                  Il mio lavoro non è solo riempirti l&apos;agenda, ma è farti arrivare pazienti veri che non
-                  chiedono solo il prezzo e non ti costringono a spiegare{" "}
-                  <strong className="text-foreground font-semibold">tutto</strong> da zero.
-                </p>
-              </div>
+          {/* Box copy */}
+          <div className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8 shadow-lg">
+            <div className="space-y-6 text-base sm:text-lg leading-relaxed text-neutral-800">
+              <p>
+                Ti consegno un sistema pratico, basato su un’analisi
+                del percorso dei clienti che parte dal{" "}
+                <strong className="font-semibold text-neutral-900">primo</strong>{" "}
+                contatto, fino alla{" "}
+                <strong className="font-semibold text-neutral-900">prenotazione</strong>.
+                Individuo dove si fermano e miglioro i punti deboli.
+              </p>
+              <p>
+                Questo approccio ti consentirà di avere più
+                prenotazioni dirette{" "}
+                <strong className="font-semibold text-neutral-900">stabili</strong>,
+                ospitando anche chi lavora in smart working, coppie che cercano un weekend
+                breve o ospiti attratti dagli eventi locali.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Sezione Servizi */}
-      <section className="py-10 lg:py-20 bg-primary/5">
-        <div className="w-full px-4 mx-auto">
-          <div className="text-center space-y-6 lg:space-y-12 max-w-[1400px] mx-auto">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
-              Quali copy riceverai
+      <div className="relative">
+        <div className="mx-auto max-w-6xl h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent" />
+      </div>
+      {/* Services Section – extra spazio sopra e sotto */}
+      <section className="py-28 bg-sky-50">
+        <div className="w-full max-w-6xl px-4 mx-auto space-y-12">
+          <div className="text-center space-y-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900">
+              Percorso prenotazioni dirette
             </h2>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:gap-8 w-full">
+            <div
+              className="
+                grid gap-8
+                justify-items-center
+                sm:grid-cols-2
+                lg:grid-cols-3
+              "
+            >
               {services.map((service, index) => {
                 const IconComponent = service.icon;
+                const isLastOdd =
+                  services.length % 2 === 1 && index === services.length - 1;
+
                 return (
                   <Card
                     key={index}
-                    className="border-2 border-primary/10 shadow-elegant hover:shadow-2xl transition-all duration-300 bg-card hover:bg-primary/5 transform hover:-translate-y-1"
+                    className={[
+                      "w-full max-w-md border border-neutral-200 bg-white shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300 rounded-2xl",
+                      isLastOdd ? "sm:col-span-2 lg:col-span-1" : "",
+                    ].join(" ")}
                   >
-                    <CardContent className="p-6 lg:p-10 space-y-4 text-center">
-                      <div className="bg-gradient-primary rounded-full w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mx-auto shadow-elegant">
-                        <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-primary-foreground" />
+                    <CardContent className="p-6 lg:p-8 space-y-4 text-center">
+                      <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full grid place-items-center bg-blue-100">
+                        <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" />
                       </div>
-                      <div className="space-y-2 sm:space-y-4">
-                        <h3 className="text-lg sm:text-xl font-bold text-primary">
+
+                      <div className="space-y-2">
+                        <h3 className="text-lg sm:text-xl font-semibold text-neutral-900">
                           {service.title}
                         </h3>
-                        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                        <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
                           {service.description}
                         </p>
                       </div>
@@ -90,10 +105,14 @@ const ServicesSection = () => {
                   </Card>
                 );
               })}
+              
             </div>
           </div>
         </div>
       </section>
+      <div className="relative">
+        <div className="mx-auto max-w-6xl h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent" />
+      </div>
     </>
   );
 };
