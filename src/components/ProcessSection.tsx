@@ -29,11 +29,11 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="relative isolate py-28 bg-neutral-50">
+    <section className="relative isolate py-16 md:py-28 bg-neutral-50">
       <div className="relative w-full px-4 mx-auto max-w-6xl">
-        <div className="text-center space-y-12 lg:space-y-16">
+        <div className="text-center space-y-8 md:space-y-12 lg:space-y-16">
           {/* Titolo */}
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900">
               Cosa succede dopo che prenoti
             </h2>
@@ -41,7 +41,7 @@ const ProcessSection = () => {
           </div>
 
           {/* Step */}
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, index) => (
               <Card
                 key={index}
@@ -49,7 +49,7 @@ const ProcessSection = () => {
                            shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-blue-300
                            transition-all duration-300 rounded-2xl"
               >
-                <CardContent className="p-8 space-y-5 text-center">
+                <CardContent className="p-5 md:p-6 lg:p-8 space-y-4 md:space-y-5 text-center">
                   {/* Cerchio step */}
                   <div className="mx-auto w-12 h-12 rounded-full grid place-items-center
                                   bg-blue-600 text-white font-semibold text-base shadow-sm">
@@ -57,12 +57,12 @@ const ProcessSection = () => {
                   </div>
 
                   {/* Titolo */}
-                  <h3 className="font-semibold text-base lg:text-lg">
+                  <h3 className="font-semibold text-base md:text-lg">
                     {step.title}
                   </h3>
 
                   {/* Testo */}
-                  <p className="text-sm lg:text-base text-neutral-600 leading-relaxed max-w-prose mx-auto">
+                  <p className="text-sm md:text-base text-neutral-600 leading-relaxed max-w-prose mx-auto">
                     {step.description}
                   </p>
                 </CardContent>

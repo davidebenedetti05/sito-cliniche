@@ -2,17 +2,17 @@ import { Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-12 lg:py-16 bg-white">
+    <footer className="py-8 md:py-12 lg:py-16 bg-white">
       <div className="w-full px-4 mx-auto">
-        <div className="max-w-5xl mx-auto text-center space-y-6">
+        <div className="max-w-5xl mx-auto text-center space-y-4 md:space-y-6">
           {/* Titolo */}
-          <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-neutral-900">
+          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-neutral-900">
             Davide Benedetti
           </h3>
           <div className="w-24 h-1 mx-auto rounded-full bg-blue-600" />
 
           {/* Social icons */}
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center gap-4 md:gap-6">
             <a
               href="https://www.instagram.com/davide_bnd_bsns/"
               target="_blank"
@@ -31,8 +31,8 @@ const Footer = () => {
           </div>
 
           {/* Legal */}
-          <div className="border-t border-neutral-300 pt-4">
-            <p className="text-xs sm:text-sm text-neutral-600">
+          <div className="border-t border-neutral-300 pt-3 md:pt-4">
+            <p className="text-xs md:text-sm text-neutral-600">
               © 2025 Davide Benedetti – Tutti i diritti riservati
             </p>
           </div>

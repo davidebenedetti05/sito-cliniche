@@ -55,12 +55,13 @@ Messaggio: ${formData.message}`;
 
   return (
     <>
-    <div className="relative">
+      <div className="relative">
         <div className="mx-auto max-w-6xl h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent" />
       </div>
+
       {/* ===================== GARANZIA & SCARSITÀ ===================== */}
-      <section className="py-28 bg-blue-50">
-        <div className="w-full max-w-6xl mx-auto px-4 text-center space-y-12">
+      <section className="py-16 md:py-28 bg-blue-50">
+        <div className="w-full max-w-6xl mx-auto px-4 text-center space-y-8 md:space-y-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900">
             Tieni alta la qualità, senza correre rischi
           </h2>
@@ -68,7 +69,7 @@ Messaggio: ${formData.message}`;
           <div className="grid gap-8 sm:grid-cols-2">
             {/* Card Garanzia */}
             <Card className="rounded-2xl border border-blue-200 shadow-lg hover:shadow-blue-300/40 transition">
-              <CardContent className="p-8 space-y-5 text-center">
+              <CardContent className="p-5 md:p-8 space-y-4 md:space-y-5 text-center">
                 <div className="w-16 h-16 mx-auto rounded-full bg-blue-600 text-white grid place-items-center shadow-md">
                   <ShieldCheck className="w-8 h-8" />
                 </div>
@@ -82,7 +83,7 @@ Messaggio: ${formData.message}`;
 
             {/* Card Esclusività */}
             <Card className="rounded-2xl border border-blue-200 shadow-lg hover:shadow-blue-300/40 transition">
-              <CardContent className="p-8 space-y-5 text-center">
+              <CardContent className="p-5 md:p-8 space-y-4 md:space-y-5 text-center">
                 <div className="w-16 h-16 mx-auto rounded-full bg-blue-600 text-white grid place-items-center shadow-md">
                   <Users className="w-8 h-8" />
                 </div>
@@ -103,10 +104,10 @@ Messaggio: ${formData.message}`;
       </div>
 
       {/* ===================== SEZIONE FORM ===================== */}
-      <section id="contact-form" className="py-28 bg-slate-50">
+      <section id="contact-form" className="py-16 md:py-28 bg-slate-50">
         <div className="w-full max-w-2xl mx-auto px-4">
-          <div className="bg-white rounded-2xl shadow-xl ring-1 ring-neutral-200 p-8 md:p-10 lg:p-12">
-            <div className="text-center space-y-6 md:space-y-8 mb-8">
+          <div className="bg-white rounded-2xl shadow-xl ring-1 ring-neutral-200 p-6 md:p-8 lg:p-12">
+            <div className="text-center space-y-4 md:space-y-6 mb-6 md:mb-8">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900">
                 Riempi anche i mesi di bassa stagione
               </h2>
@@ -118,8 +119,8 @@ Messaggio: ${formData.message}`;
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
+              <div className="grid md:grid-cols-2 gap-3 md:gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-neutral-900">
                     Nome e Cognome <span className="text-blue-600">*</span>
@@ -150,7 +151,7 @@ Messaggio: ${formData.message}`;
                 </div>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-3 md:gap-4">
                 <div className="space-y-2">
                   <label htmlFor="hotelName" className="text-sm font-medium text-neutral-900">
                     Nome hotel <span className="text-blue-600">*</span>
@@ -183,7 +184,7 @@ Messaggio: ${formData.message}`;
               <div className="flex justify-center">
                 <Button
                   type="submit"
-                  className="w-full sm:w-auto text-base leading-tight px-6 py-4 rounded-lg
+                  className="w-full sm:w-auto text-base leading-tight px-5 py-3 md:px-6 md:py-4 rounded-lg
                            bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold shadow-md
                            hover:from-blue-700 hover:to-blue-900 transition-transform hover:scale-105
                            whitespace-normal break-words min-w-[200px] text-center"

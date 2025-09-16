@@ -5,9 +5,9 @@ const Hero = () => {
 
   return (
     <section className="relative isolate bg-neutral-50">
-      <div className="max-w-6xl mx-auto px-4 py-20 md:py-22 lg:py-25">
+      <div className="max-w-6xl mx-auto px-4 py-12 md:py-20 lg:py-24">
         {/* Contenuto */}
-        <div className="mx-auto max-w-4xl text-center space-y-6 md:space-y-8">
+        <div className="mx-auto max-w-4xl text-center space-y-4 md:space-y-8">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.08] text-neutral-900">
             Hai davvero il {" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-800">

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ClipboardCheck } from "lucide-react"; // icona checklist
+import { ClipboardCheck } from "lucide-react";
 import videoFile from "@/assets/video_sito.mp4";
 import videoCover from "@/assets/copertina-sito.png";
 
@@ -9,7 +9,7 @@ const VideoSection = () => {
   };
 
   return (
-    <section className="relative isolate pt-4 lg:pt-0 pb-20 lg:pb-20 bg-neutral-50">
+    <section className="relative isolate pt-2 md:pt-4 lg:pt-0 pb-12 md:pb-20 bg-neutral-50">
       <div className="relative w-full max-w-6xl px-4 mx-auto">
         <div className="text-center">
           {/* VIDEO */}
@@ -30,8 +30,8 @@ const VideoSection = () => {
             </div>
           </div>
 
-                             {/* CTA */}
-          <div className="mt-8 flex flex-col items-center gap-6">
+          {/* CTA */}
+          <div className="mt-6 md:mt-8 flex flex-col items-center gap-4 md:gap-6">
             <Button
               onClick={scrollToForm}
               className="w-full sm:w-auto text-lg px-8 py-4 rounded-lg
@@ -42,7 +42,7 @@ const VideoSection = () => {
             </Button>
 
             {/* BONUS */}
-            <div className="mt-12 max-w-xl mx-auto bg-amber-50 rounded-2xl p-6 shadow-lg ring-1 ring-amber-200 text-center space-y-4">
+            <div className="mt-8 md:mt-12 max-w-xl mx-auto bg-amber-50 rounded-2xl p-5 md:p-6 shadow-lg ring-1 ring-amber-200 text-center space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 ring-1 ring-amber-200">
                 <ClipboardCheck className="w-4 h-4 text-amber-700" />
                 <span className="text-xs font-semibold text-amber-800 tracking-wide">BONUS</span>
@@ -64,65 +64,61 @@ const VideoSection = () => {
           </div>
 
           {/* SEPARATORE + SPAZIO EXTRA */}
-          <div className="mt-20 mb-20 w-full">
+          <div className="mt-12 md:mt-16 mb-12 md:mb-16 w-full">
             <div className="h-px w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
           </div>
 
           {/* --- SEZIONE COMMISSIONI --- */}
-          <div className="mb-10 text-left bg-sky-50 rounded-2xl shadow-md ring-1 ring-sky-100 px-6 py-10">
+          <div className="mb-8 md:mb-10 text-left bg-sky-50 rounded-2xl shadow-md ring-1 ring-sky-100 px-6 py-6 md:py-10">
             <h2 className="text-2xl md:text-3xl font-bold text-sky-900 text-center">
               Quanto incidono davvero le commissioni
             </h2>
 
-            <div className="mt-8 max-w-3xl mx-auto bg-white rounded-xl shadow-sm ring-1 ring-neutral-200 overflow-hidden">
+            <div className="mt-6 md:mt-8 max-w-3xl mx-auto bg-white rounded-xl shadow-sm ring-1 ring-neutral-200 overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="min-w-full border-collapse text-sm md:text-base">
                   <thead className="bg-white">
                     <tr className="text-left text-neutral-700">
-                      <th className="px-4 py-3 font-semibold border-b border-neutral-200">
+                      <th className="px-3 py-2 md:px-4 md:py-3 font-semibold border-b border-neutral-200">
                         Tipo di prenotazione
                       </th>
-                      <th className="px-4 py-3 font-semibold border-b border-neutral-200">
+                      <th className="px-3 py-2 md:px-4 md:py-3 font-semibold border-b border-neutral-200">
                         Prezzo camera
                       </th>
-                      <th className="px-4 py-3 font-semibold border-b border-neutral-200">
+                      <th className="px-3 py-2 md:px-4 md:py-3 font-semibold border-b border-neutral-200">
                         Quanto resta al tuo hotel
                       </th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-neutral-200">
                     <tr className="hover:bg-neutral-50">
-                      <td className="px-4 py-3">Con intermediari</td>
-                      <td className="px-4 py-3">100&nbsp;€</td>
-                      <td className="px-4 py-3">80&nbsp;€</td>
+                      <td className="px-3 py-2 md:px-4 md:py-3">Con intermediari</td>
+                      <td className="px-3 py-2 md:px-4 md:py-3">100&nbsp;€</td>
+                      <td className="px-3 py-2 md:px-4 md:py-3">80&nbsp;€</td>
                     </tr>
                     <tr className="hover:bg-neutral-50">
-                      <td className="px-4 py-3">Diretta</td>
-                      <td className="px-4 py-3">100&nbsp;€</td>
-                      <td className="px-4 py-3">100&nbsp;€</td>
+                      <td className="px-3 py-2 md:px-4 md:py-3">Diretta</td>
+                      <td className="px-3 py-2 md:px-4 md:py-3">100&nbsp;€</td>
+                      <td className="px-3 py-2 md:px-4 md:py-3">100&nbsp;€</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
-              <div className="px-4 py-4 bg-neutral-50 border-t border-neutral-200">
-  <p className="text-neutral-700 text-sm md:text-base">
-    In un hotel da 10–30 camere, con un prezzo medio di 100€, bastano 10 prenotazioni al mese
-    passate alle OTA per bruciare circa <span className="font-semibold">24.000€</span> di commissioni in un anno,
-    cioè l’equivalente di uno stipendio annuale o di una ristrutturazione completa.
-  </p>
-  <p className="mt-4 text-neutral-700 text-sm md:text-base">
-    Senza contare il fatto che può farti <span className="font-semibold">scendere</span> di
-    ranking da un giorno all’altro, modificando leggermente l’algoritmo.
-  </p>
-</div>
-
+              <div className="px-3 py-3 md:px-4 md:py-4 bg-neutral-50 border-t border-neutral-200">
+                <p className="text-neutral-700 text-sm md:text-base">
+                  In un hotel da 10–30 camere, con un prezzo medio di 100€, bastano 10 prenotazioni al mese
+                  passate alle OTA per bruciare circa <span className="font-semibold">24.000€</span> di commissioni in un anno,
+                  cioè l’equivalente di uno stipendio annuale o di una ristrutturazione completa.
+                </p>
+                <p className="mt-3 md:mt-4 text-neutral-700 text-sm md:text-base">
+                  Senza contare il fatto che può farti <span className="font-semibold">scendere</span> di
+                  ranking da un giorno all’altro, modificando leggermente l’algoritmo.
+                </p>
+              </div>
             </div>
           </div>
           {/* --- FINE SEZIONE COMMISSIONI --- */}
-
-
-
         </div>
       </div>
     </section>

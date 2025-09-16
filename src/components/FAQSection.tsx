@@ -5,10 +5,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-<div className="relative">
-        <div className="mx-auto max-w-6xl h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent" />
-      </div>
-
 const FAQSection = () => {
   const faqs = [
     {
@@ -40,27 +36,27 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-20 lg:py-24 bg-sky-50">
+    <section className="py-12 md:py-20 lg:py-24 bg-sky-50">
       <div className="w-full px-4 mx-auto">
-        <div className="max-w-3xl mx-auto space-y-8">
-          <div className="text-center space-y-3">
+        <div className="max-w-3xl mx-auto space-y-6 md:space-y-8">
+          <div className="text-center space-y-2 md:space-y-3">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900">
               Domande frequenti
             </h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto rounded-full" />
           </div>
 
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
                 className="rounded-xl border border-neutral-200 bg-white shadow-sm hover:shadow-md transition"
               >
-                <AccordionTrigger className="px-6 py-4 text-left text-base lg:text-lg font-semibold text-neutral-900 hover:no-underline hover:text-blue-600 transition-colors">
+                <AccordionTrigger className="px-4 py-3 text-left text-base md:text-lg font-semibold text-neutral-900 hover:no-underline hover:text-blue-600 transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6 text-neutral-600 text-sm sm:text-base leading-relaxed">
+                <AccordionContent className="px-4 pb-4 text-neutral-600 text-sm md:text-base leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

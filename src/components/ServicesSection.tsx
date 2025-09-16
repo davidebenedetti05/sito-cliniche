@@ -25,8 +25,8 @@ const ServicesSection = () => {
 
   return (
     <>
-      {/* USP Section – con più respiro sopra e sotto */}
-      <section className="py-28 bg-neutral-100">
+      {/* USP Section */}
+      <section className="py-16 md:py-28 bg-neutral-100">
         <div className="max-w-4xl mx-auto px-4 space-y-10">
           {/* Titolo */}
           <h2 className="text-center text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900">
@@ -34,7 +34,7 @@ const ServicesSection = () => {
           </h2>
 
           {/* Box copy */}
-          <div className="rounded-2xl border border-blue-100 bg-white p-6 sm:p-8 shadow-lg">
+          <div className="rounded-2xl border border-blue-100 bg-white p-5 md:p-6 sm:md:p-8 shadow-lg">
             <div className="space-y-6 text-base sm:text-lg leading-relaxed text-neutral-800">
               <p>
                 Ti consegno un sistema pratico, basato su un’analisi
@@ -59,10 +59,10 @@ const ServicesSection = () => {
       <div className="relative">
         <div className="mx-auto max-w-6xl h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent" />
       </div>
-      {/* Services Section – extra spazio sopra e sotto */}
-      <section className="py-28 bg-sky-50">
-        <div className="w-full max-w-6xl px-4 mx-auto space-y-12">
-          <div className="text-center space-y-8">
+      {/* Services Section */}
+      <section className="py-16 md:py-28 bg-sky-50">
+        <div className="w-full max-w-6xl px-4 mx-auto space-y-8 md:space-y-12">
+          <div className="text-center space-y-6 md:space-y-8">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900">
               Percorso prenotazioni dirette
             </h2>
@@ -88,7 +88,7 @@ const ServicesSection = () => {
                       isLastOdd ? "sm:col-span-2 lg:col-span-1" : "",
                     ].join(" ")}
                   >
-                    <CardContent className="p-6 lg:p-8 space-y-4 text-center">
+                    <CardContent className="p-5 md:p-6 lg:p-8 space-y-3 md:space-y-4 text-center">
                       <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full grid place-items-center bg-blue-100">
                         <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" />
                       </div>
@@ -97,7 +97,7 @@ const ServicesSection = () => {
                         <h3 className="text-lg sm:text-xl font-semibold text-neutral-900">
                           {service.title}
                         </h3>
-                        <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
+                        <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
                           {service.description}
                         </p>
                       </div>
