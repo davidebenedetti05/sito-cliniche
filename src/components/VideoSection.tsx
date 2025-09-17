@@ -111,10 +111,7 @@ const VideoSection = () => {
                   passate alle OTA per bruciare circa <span className="font-semibold">24.000€</span> di commissioni in un anno,
                   cioè l’equivalente di uno stipendio annuale o di una ristrutturazione completa.
                 </p>
-                <p className="mt-3 md:mt-4 text-neutral-700 text-sm md:text-base">
-                  Senza contare il fatto che può farti <span className="font-semibold">scendere</span> di
-                  ranking da un giorno all’altro, modificando leggermente l’algoritmo.
-                </p>
+                
               </div>
             </div>
           </div>
