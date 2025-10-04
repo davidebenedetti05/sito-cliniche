@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Globe, Mail, MessageCircle } from "lucide-react";
+import { Globe, Mail, Share2  } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -13,7 +13,7 @@ const ServicesSection = () => {
       title: "Presenza social",
       description:
         "Post e stories che tengono vivo il legame con chi ti segue e rafforzano la riconoscibilità del brand.",
-      icon: MessageCircle,
+      icon: Share2 ,
     },
     {
       title: "Email marketing",
