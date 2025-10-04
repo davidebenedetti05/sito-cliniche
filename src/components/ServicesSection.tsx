@@ -6,13 +6,13 @@ const ServicesSection = () => {
     {
       title: "Copywriting",
       description:
-        "Testi mirati per ads (o organico) e sito che spingono alla prenotazione.",
+        "Testi per sito e campagne che trasformano le visite in prenotazioni.Testi per sito e campagne che trasformano le visite in prenotazioni.",
       icon: Globe,
     },
     {
-      title: "Script pronti per la reception",
+      title: "Presenza social",
       description:
-        "Frasi pronte per chiudere preventivi al telefono, via mail o WhatsApp in pochi minuti.",
+        "Post e stories che tengono vivo il legame con chi ti segue e rafforzano la riconoscibilità del brand.",
       icon: MessageCircle,
     },
     {
